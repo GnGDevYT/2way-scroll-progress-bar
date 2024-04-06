@@ -42,7 +42,7 @@ function App() {
     <div>
       <p className='text-2xl font-bold py-7'>Two way scrolling progress bar:</p>
       <ScrollProgressBar progressValue={scrollProgress} />
-      <div className='overflow-auto h-96 w-96 hidden-scrollbar' ref={scrollListRef}>
+      <div className='overflow-auto h-96 w-96 custom-scrollbar' ref={scrollListRef}>
         <ul className='divide-y divide-cyan-300'>
           {list.map(word => {
             return(
